@@ -1,0 +1,14 @@
+# Arquivos e Diretórios ignorados
+
+### Ambientes virtuais ###
+venv/
+env/
+
+### Django & Python ###
+*.pyc
+__pycache__/
+db.sqlitei3
+*.env
+
+### VSCODE ###
+.vscode/

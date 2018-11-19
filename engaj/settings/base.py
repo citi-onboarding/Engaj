@@ -125,4 +125,4 @@ STATICFILES_FINDERS = [
 
 # SASS Support
 SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
-SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'sass')
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'sass-files')

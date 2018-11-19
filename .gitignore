@@ -7,7 +7,7 @@ env/
 ### Django & Python ###
 *.pyc
 __pycache__/
-db.sqlitei3
+db.sqlite3
 *.env
 
 ### VSCODE ###

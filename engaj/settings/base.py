@@ -126,3 +126,8 @@ STATICFILES_FINDERS = [
 # SASS Support
 SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'sass-files')
+
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+SASS_ROOT = os.path.join(BASE_DIR, 'engaj', 'static', 'scss')
+SASS_PROCESSOR_ROOT = SASS_ROOT

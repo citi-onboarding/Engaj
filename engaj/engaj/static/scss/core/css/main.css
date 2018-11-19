@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  background: #8C76AA;
+  justify-content: center; }
+
+/*# sourceMappingURL=main.css.map */

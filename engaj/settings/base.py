@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
 # Quick-start development settings - unsuitable for production
@@ -115,7 +115,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATICFILES_DIRS = [STATIC_DIR, ]
-STATIC_URL = '/static/'
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -125,9 +124,10 @@ STATICFILES_FINDERS = [
 
 # SASS Support
 SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
-SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, 'sass-files')
+
+SASS_ROOT = os.path.join(BASE_DIR, 'sass-files')
+SASS_PROCESSOR_ROOT = SASS_ROOT
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-SASS_ROOT = os.path.join(BASE_DIR, 'engaj', 'static', 'scss')
-SASS_PROCESSOR_ROOT = SASS_ROOT
+

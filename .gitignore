@@ -12,3 +12,6 @@ db.sqlite3
 
 ### VSCODE ###
 .vscode/
+
+### Arquivos gerados automaticamente pelo SASS ###
+sass-files/ 

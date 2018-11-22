@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* Definições gerais */
+:root{
+    font-size: 10px; /* Usar rem para tamanhos */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos de cada componente (incluidos antes da produção)*/
+
+/* ======= HEADER ======== */
+/* Navbar */
+/* Banner */
+
+/* ======= SERVIÇOS ======== */
+
+/* ======= RODAPÉ ======= */
+
+/* ======= ÍCONE DO MESSENGER ======= */

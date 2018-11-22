@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block CUSTOM_HEAD %}
+
+<!-- Incluir os estilos de cada componente no desenvolvimento,
+que serão juntos em um único arquivo antes do deploy -->
+
+{% endblock CUSTOM_HEAD %}
+
+{% block TITLE %} Engaj - Home {% endblock TITLE %}
+
+{% block CONTENT %}
+
+<div id="interface">
+    <header id="cabecalho">
+        <!-- Incluir o template da navbar aqui -->
+        <!-- Incluir o template do banner -->
+    </header>
+
+    
+    <!-- Seção de serviços -->
+    {% include "includes/servicos.html" %}
+
+    <!-- Inserir o template do rodapé -->
+
+</div>
+{% endblock CONTENT %}

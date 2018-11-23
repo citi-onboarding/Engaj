@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* No desenvolvimento, colocar apenas cores aqui */
+:root{
+    --cor-primaria: #17A85F;
+    --cor-secundaria: #0B8A63;
+    --cor-clara: #D7D7D7;
+}
+@media screen /*and (max-width: 940px)*/ {
+
+    #servicos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .card-servicos{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        border-radius: 1.2rem;
+        box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    }
+
+    .card-servicos figure{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-servicos figcaption{
+        border-radius: 1.2rem 1.2rem 0 0;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: normal;
+        padding: 1rem;
+        background: white;
+        color: var(--cor-secundaria);
+    }
+
+    .card-servicos img{
+        width: 100%;
+        /* height: 20rem; */
+    }
+
+    .card-servicos p{
+        display: block;
+        font-size: 2rem;
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+}

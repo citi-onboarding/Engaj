@@ -38,6 +38,7 @@ body{
     padding: 0;
 }
 
+
 .botao{
     transition: all 200ms ease-in-out;
     background: none;
@@ -68,6 +69,8 @@ body{
     font-size: 4rem;
     color: var(--cor-secundaria);
 }
+
+
 
 
 #interface{

@@ -3,22 +3,22 @@
 
     <h1 class="titulo-secao"> <i class="icon-services"></i> Serviços</h1>
 
-    <div class="grupo-cards">
-        {% for servico in servicos %}
-        <div class="card-servicos">
+    <div id="slick-servicos">
 
+        {% for servico in servicos %}
+        <div class="card">
             <!--Figura que contem o servico e o nome-->
-            <figure>
-                <figcaption> {{servico.nome}} </figcaption>
-                <!--Ver como trabalhar com imagens no model-->
+            <h1> {{servico.nome}} </h1>
+
+            <div class="vp">
                 <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
-            </figure>
+            </div>
 
             <!--Descrição e CTA-->
             <p>{{servico.descricao}}</p>
             <button class="botao" href="">Contrate Já!</button>
         </div>
         {% endfor %}
-    
+
     </div>
 </section>

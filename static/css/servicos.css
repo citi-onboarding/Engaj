@@ -12,56 +12,80 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-.grupo-cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: top;
-    flex-wrap: wrap;
+#slick-servicos{
+    width: 80%;
 }
 
-.card-servicos {
+#slick-servicos .card {
     width: 30rem;
-    height: 50rem;
+    height: 50rem; 
     display: flex;
     flex-direction: column;
+    margin: 1rem;
+    
     border-radius: 1.2rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 3rem;
 }
 
-.card-servicos figure {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-servicos figcaption {
+#slick-servicos .card h1 {
     border-radius: 1.2rem 1.2rem 0 0;
     text-align: center;
     font-size: 2.5rem;
     font-weight: normal;
-    padding: 1rem;
+    margin: 1rem;
     background: white;
     color: var(--cor-secundaria);
 }
 
-.card-servicos img {
+#slick-servicos .card img {
     position: relative;
     width: 100%;
     scale: initial;
     /* height: 20rem; */
 }
 
-.card-servicos p {
+#slick-servicos .card p {
     display: block;
     z-index: 1;
     background: white;
     font-size: 2rem;
     padding: 2rem;
     padding-bottom: 0;
+}
+
+.slick-slide:focus{
+    outline: none;
+}
+
+.card .vp{
+    overflow: hidden;
+}
+
+.slick-dots{
+    display: flex;
+    flex-direction: row;
+    list-style: none;    
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.slick-dots li button{
+    margin: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--cor-primaria);
+    background: white;
+    color: white;
+    border-radius: 100%;
+}
+
+.slick-dots .slick-active button{
+    background: var(--cor-primaria);
+    color: var(--cor-primaria);
 }

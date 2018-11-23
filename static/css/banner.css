@@ -5,18 +5,18 @@ section{
 }
 
 
-section#banner{
+section{
     background-color: var(--engajtom1);
-    height: 813px;
     width: 100%;
     text-align: center;
+    background: linear-gradient(145deg, rgba(23,168,95,1) 0%, rgba(11,138,99,1) 100%);
 }
 
 section#banner h1{
-    padding-top: 10rem;
     font-size: 10rem;
     margin: 0rem;
     font-weight: 500;
+    color: white;
 }
 
 a{
@@ -29,11 +29,36 @@ a{
     padding: 1rem;
     padding-right: 3rem;
     padding-left: 3rem;
+    margin-top: 150rem;
+}
+
+div.container{
+    height: 813px;
+}
+
+div#frase-impacto{
+    padding-top: 33rem;  
+}
+div#banner-cta{
+    margin-top: 10rem; 
+     
 }
 
 a:hover{
-  
-    
-    border: 0.3rem solid var(--engajtom2);
-    background-color: var(--engajtom2);
+    border: 0.3rem solid var(--engajtom1);
+    background-color: var(--engajtom1);
+}
+
+.row{
+    width: 100%;
+    padding: 70px;
+    background-color: green;
+}
+
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: purple;
+    flex-wrap: wrap;
 }

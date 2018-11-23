@@ -58,6 +58,9 @@ body{
     font-size: 2rem;
     font-family: "Neo Sans", sans-serif;
     font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .botao:hover{
@@ -76,6 +79,7 @@ body{
     font-weight: 300;
     font-size: 4rem;
     color: var(--cor-secundaria);
+    margin-bottom: 0;
 }
 
 #interface{

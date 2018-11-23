@@ -1,8 +1,24 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Neo Sans";
+    src:url("../font/neo-sans-pro-light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neo Sans";
+    src:url("../font/neo-sans-pro-medium.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* Definições gerais */
 :root{
     font-size: 10px; /* Usar rem para tamanhos */
+    font-family: "Neo Sans", sans-serif;
+    font-weight: 300;
 }
 
 body{

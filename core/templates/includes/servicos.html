@@ -3,21 +3,22 @@
 
     <h1 class="titulo-secao"> <i class="icon-services"></i> Serviços</h1>
 
-    {% for servico in servicos %}
+    <div class="grupo-cards">
+        {% for servico in servicos %}
+        <div class="card-servicos">
 
-    <div class="card-servicos">
+            <!--Figura que contem o servico e o nome-->
+            <figure>
+                <figcaption> {{servico.nome}} </figcaption>
+                <!--Ver como trabalhar com imagens no model-->
+                <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
+            </figure>
 
-        <!--Figure que contem o servico e o nome-->
-        <figure>
-            <figcaption> {{servico.nome}} </figcaption>
-            <!--Ver como trabalhar com imagens no model-->
-            <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
-        </figure>
-
-        <!--Descrição e CTA-->
-        <p>{{servico.descricao}}</p>
-        <button class="botao" href="">Contrate Já!</button>
+            <!--Descrição e CTA-->
+            <p>{{servico.descricao}}</p>
+            <button class="botao" href="">Contrate Já!</button>
+        </div>
+        {% endfor %}
+    
     </div>
-
-    {% endfor %}
 </section>

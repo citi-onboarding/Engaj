@@ -1,56 +1,67 @@
 @charset "UTF-8";
+
 /* No desenvolvimento, colocar apenas cores aqui */
-:root{
+:root {
     --cor-primaria: #17A85F;
     --cor-secundaria: #0B8A63;
     --cor-clara: #D7D7D7;
 }
-@media screen /*and (max-width: 940px)*/ {
 
-    #servicos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .grupo-cards{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-servicos{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        border-radius: 1.2rem;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
-    }
+#servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    .card-servicos figure{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .card-servicos figcaption{
-        border-radius: 1.2rem 1.2rem 0 0;
-        text-align: center;
-        font-size: 2.5rem;
-        font-weight: normal;
-        padding: 1rem;
-        background: white;
-        color: var(--cor-secundaria);
-    }
+.grupo-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    flex-wrap: wrap;
+}
 
-    .card-servicos img{
-        width: 100%;
-        /* height: 20rem; */
-    }
+.card-servicos {
+    width: 30rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
 
-    .card-servicos p{
-        display: block;
-        font-size: 2rem;
-        padding: 2rem;
-        padding-bottom: 0;
-    }
+.card-servicos figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-servicos figcaption {
+    border-radius: 1.2rem 1.2rem 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding: 1rem;
+    background: white;
+    color: var(--cor-secundaria);
+}
+
+.card-servicos img {
+    position: relative;
+    width: 100%;
+    scale: initial;
+    /* height: 20rem; */
+}
+
+.card-servicos p {
+    display: block;
+    z-index: 1;
+    background: white;
+    font-size: 2rem;
+    padding: 2rem;
+    padding-bottom: 0;
 }

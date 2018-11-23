@@ -62,7 +62,7 @@ body{
     outline: none;
 }
 
-section h1 {
+.titulo-secao {
     text-align: center;
     font-weight: 300;
     font-size: 4rem;

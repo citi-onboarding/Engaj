@@ -11,7 +11,7 @@
         <figure>
             <figcaption> {{servico.nome}} </figcaption>
             <!--Ver como trabalhar com imagens no model-->
-            <img src="{% static 'img/solar_panel.png' %}" alt="{{servico.alt}}">
+            <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
         </figure>
 
         <!--Descrição e CTA-->

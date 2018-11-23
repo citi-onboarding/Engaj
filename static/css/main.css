@@ -33,11 +33,18 @@
     --cor-clara: #D7D7D7;
 }
 
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
-
 
 .botao{
     transition: all 200ms ease-in-out;
@@ -54,9 +61,10 @@ body{
 }
 
 .botao:hover{
-    transition: all 200ms ease-in-out;
+    transition: all 100ms ease-in-out;
     color: white;
     background: var(--cor-primaria);
+    
 }
 
 .botao:focus{
@@ -69,9 +77,6 @@ body{
     font-size: 4rem;
     color: var(--cor-secundaria);
 }
-
-
-
 
 #interface{
     width: 100%;
@@ -88,3 +93,5 @@ body{
 /* ======= RODAPÉ ======= */
 
 /* ======= ÍCONE DO MESSENGER ======= */
+
+/* ======= MISC ======= */

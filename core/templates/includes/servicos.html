@@ -2,23 +2,28 @@
 <section id="servicos">
 
     <h1 class="titulo-secao"> <i class="icon-services"></i> Serviços</h1>
+    <div class=wrapper>
+        <span class="arrow prev "><i class="icon-arrow-right"></i></span>
+        <div id="slick-servicos">
 
-    <div id="slick-servicos">
+            {% for servico in servicos %}
+            <div class="card">
+                <!--Figura que contem o servico e o nome-->
+                <h1> {{servico.nome}} </h1>
 
-        {% for servico in servicos %}
-        <div class="card">
-            <!--Figura que contem o servico e o nome-->
-            <h1> {{servico.nome}} </h1>
+                <div class="vp">
+                    <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
+                </div>
 
-            <div class="vp">
-                <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
+                <!--Descrição e CTA-->
+                <p>{{servico.descricao}}</p>
+                <button class="botao" href="">Contrate Já!</button>
+
             </div>
+            {% endfor %}
 
-            <!--Descrição e CTA-->
-            <p>{{servico.descricao}}</p>
-            <button class="botao" href="">Contrate Já!</button>
         </div>
-        {% endfor %}
-
+        <span class="arrow next esconder-m "><i class="icon-arrow-left"></i></span>
     </div>
+
 </section>

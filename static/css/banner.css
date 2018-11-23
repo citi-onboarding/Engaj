@@ -6,10 +6,11 @@ section{
 
 
 section{
-    background-color: var(--engajtom1);
+    /*background-color: var(--engajtom1);*/
+    background-image: url('../img/engaj_header_img.png'); 
     width: 100%;
     text-align: center;
-    background: linear-gradient(145deg, rgba(23,168,95,1) 0%, rgba(11,138,99,1) 100%);
+    
 }
 
 section#banner h1{
@@ -32,15 +33,13 @@ a{
     margin-top: 150rem;
 }
 
-div.container{
-    height: 813px;
-}
 
 div#frase-impacto{
     padding-top: 33rem;  
 }
 div#banner-cta{
     margin-top: 10rem; 
+    position: inherit;
      
 }
 
@@ -52,13 +51,13 @@ a:hover{
 .row{
     width: 100%;
     padding: 70px;
-    background-color: green;
 }
 
-.container{
+div.container{
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: purple;
+    background: linear-gradient(145deg, rgba(23,168,95,0.85) 0%, rgba(11,138,99,0.85) 100%);
     flex-wrap: wrap;
+    height: 813px;
 }

@@ -1,0 +1,39 @@
+section{
+    --engajtom1: #17A85F;
+    --engajtom2: #0B8A63;
+    --engajtom3: #0D6A64; 
+}
+
+
+section#banner{
+    background-color: var(--engajtom1);
+    height: 813px;
+    width: 100%;
+    text-align: center;
+}
+
+section#banner h1{
+    padding-top: 10rem;
+    font-size: 10rem;
+    margin: 0rem;
+    font-weight: 500;
+}
+
+a{
+    height: 50rem;
+    text-decoration: none;
+    color: white;
+    border: 0.3rem solid white;
+    border-radius: 5rem;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+a:hover{
+  
+    
+    border: 0.3rem solid var(--engajtom2);
+    background-color: var(--engajtom2);
+}

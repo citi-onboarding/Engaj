@@ -16,12 +16,46 @@
     margin-bottom: 1rem;
 }
 
+.servico-titulo{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+
+
+.servico-descricao{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servico-foto{
+    max-height: 270px;
+    width: 460px;
+}
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 #slick-servicos {
     width: 80%;
 }
 
 #slick-servicos .card {
-    height: 50rem;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,19 +63,16 @@
     margin: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    
     border-radius: 1.2rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 #slick-servicos .card h1 {
-    border-radius: 1.2rem 1.2rem 0 0;
+    /*border-radius: 1.2rem 1.2rem 0 0;*/
     text-align: center;
     font-size: 2.5rem;
     font-weight: normal;
-    margin: 1rem;
-    margin-bottom: 0.5rem;
-    background: white;
+
     color: var(--cor-secundaria);
 }
 
@@ -52,14 +83,16 @@
 }
 
 #slick-servicos .card p {
-    z-index: 1;
+    /*z-index: 1;*/
     background: white;
     font-size: 2rem;
-    width: 85%;
+    padding: 20px;
+    /*width: 85%;*/
+    
 }
 
 #slick-servicos .card button {
-    width: 85%;
+    width: 200px;
     height: 4.2rem;
 }
 .card .vp {
@@ -96,7 +129,7 @@
 }
 
 .arrow {
-    transition: 200ms all ease-in-out;
+    transition: 100ms all ease-in-out;
     color: var(--cor-primaria);
     font-size: 7rem;
 }
@@ -115,17 +148,15 @@
     transform: translateX(-20px);
 }
 
-.wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
 
 
 @media screen and (max-width: 900px) {
     .arrow {
         display: none;
+    }
+
+    #slick-servicos {
+        width: 70%;
     }
 
     #slick-servicos .card{

@@ -76,16 +76,20 @@ body{
 }
 
 .titulo-secao {
-    text-align: center;
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--cor-secundaria);
     margin-bottom: 0;
+}
+
+.titulo{
+    margin-bottom: 70px;
 }
 
 #interface{
     width: 100%;
 }
+
 
 /* Estilos de cada componente (incluidos antes da produção)*/
 

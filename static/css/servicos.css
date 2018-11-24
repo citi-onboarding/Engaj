@@ -17,7 +17,6 @@
 }
 
 .servico-titulo{
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -26,10 +25,7 @@
     width: 100%;
 }
 
-
-
 .servico-descricao{
-
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -43,7 +39,6 @@
     width: 460px;
 }
 
-
 .wrapper {
     display: flex;
     width: 100%;
@@ -55,11 +50,11 @@
 }
 
 #slick-servicos .card {
-    min-height: 500px;
+    min-height: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -162,4 +157,10 @@
     #slick-servicos .card{
       margin: 1rem;
     }
+}
+
+@media screen and (max-width: 425px){
+  #slick-servicos .card{
+    margin: 0.1rem;
+  }
 }

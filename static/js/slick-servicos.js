@@ -13,7 +13,8 @@ $("#slick-servicos").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        arrows: false
+        arrows: false,
+        centerMode: false,
       }
     }
   ]

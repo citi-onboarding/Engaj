@@ -14,14 +14,20 @@
                 <div class = "servico-titulo">
                     <h1> {{servico.nome}} </h1>
                 </div>
+
+                <!--Corta o tamanho da imagem-->
                 <div class="vp">
                     <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
                 </div>
+
                 <!--Descrição e CTA-->
                 <div class = "servico-descricao">
+                    <!--Descrição do serviço-->
                     <div>
                         <p>{{servico.descricao}}</p>
                     </div>
+
+                    <!--Call to Action-->
                     <div>
                         <button class="botao" href="#"> <span> Contrate Já!</span></button>
                     </div>

@@ -16,7 +16,7 @@
     margin-bottom: 1rem;
 }
 
-.servico-titulo{
+.servico-titulo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,7 +25,7 @@
     width: 100%;
 }
 
-.servico-descricao{
+.servico-descricao {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@
     justify-content: center;
 }
 
-.servico-foto{
+.servico-foto {
     max-height: 270px;
     width: 460px;
 }
@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: center;
 }
+
 #slick-servicos {
     width: 80%;
 }
@@ -59,7 +60,7 @@
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 1.2rem;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 #slick-servicos .card h1 {
@@ -83,13 +84,14 @@
     font-size: 2rem;
     padding: 20px;
     /*width: 85%;*/
-    
+
 }
 
 #slick-servicos .card button {
     width: 200px;
     height: 4.2rem;
 }
+
 .card .vp {
     overflow: hidden;
 }
@@ -150,17 +152,15 @@
         display: none;
     }
 
-    #slick-servicos {
-        width: 70%;
+    .slick-slider{
+        margin: 1rem;
     }
 
-    #slick-servicos .card{
-      margin: 1rem;
-    }
 }
 
-@media screen and (max-width: 425px){
-  #slick-servicos .card{
-    margin: 0.1rem;
-  }
+@media screen and (max-width: 425px) {
+    
+    #slick-servicos .card {
+        margin: 1rem;
+    }
 }

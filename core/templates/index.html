@@ -9,7 +9,7 @@ que serão juntos em um único arquivo antes do deploy -->
 <link rel="stylesheet" href={% static 'css/engaj-icons.css' %}>
 <link rel="stylesheet" href={% static 'css/main.css' %}>
 
-{% comment %} <link rel="stylesheet" href={% static 'css/servicos.css' %}> {% endcomment %}
+<link rel="stylesheet" href={% static 'css/servicos.css' %}>
 <link rel="stylesheet" href={% static 'css/footer.css' %}>
 
 <!--CSS do Slick-->
@@ -26,7 +26,7 @@ que serão juntos em um único arquivo antes do deploy -->
         <!-- Incluir o template da navbar aqui -->
         <!-- Incluir o template do banner -->
     </header>
-
+    {% include "includes/servicos.html" %}
     {% include "includes/footer.html" %}
 
 </div>

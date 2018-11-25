@@ -9,7 +9,8 @@ que serão juntos em um único arquivo antes do deploy -->
 <link rel="stylesheet" href={% static 'css/engaj-icons.css' %}>
 <link rel="stylesheet" href={% static 'css/main.css' %}>
 
-<link rel="stylesheet" href={% static 'css/servicos.css' %}>
+{% comment %} <link rel="stylesheet" href={% static 'css/servicos.css' %}> {% endcomment %}
+<link rel="stylesheet" href={% static 'css/footer.css' %}>
 
 <!--CSS do Slick-->
 <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -26,11 +27,8 @@ que serão juntos em um único arquivo antes do deploy -->
         <!-- Incluir o template do banner -->
     </header>
 
+    {% include "includes/footer.html" %}
 
-    <!-- Seção de serviços -->
-    {% include "includes/servicos.html" %}
-
-    <!-- Inserir o template do rodapé -->
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

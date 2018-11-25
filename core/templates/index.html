@@ -9,7 +9,8 @@ que serão juntos em um único arquivo antes do deploy -->
 <link rel="stylesheet" href={% static 'css/engaj-icons.css' %}>
 <link rel="stylesheet" href={% static 'css/main.css' %}>
 
-<link rel="stylesheet" href={% static 'css/servicos.css' %}>
+{% comment %} <link rel="stylesheet" href={% static 'css/servicos.css' %}> {% endcomment %}
+<link rel="stylesheet" href={% static 'css/footer.css' %}>
 
 {% endblock CUSTOM_HEAD %}
 
@@ -23,11 +24,11 @@ que serão juntos em um único arquivo antes do deploy -->
         <!-- Incluir o template do banner -->
     </header>
 
-    
     <!-- Seção de serviços -->
     {% include "includes/servicos.html" %}
 
     <!-- Inserir o template do rodapé -->
+    {% include "includes/footer.html" %}
 
 </div>
 {% endblock CONTENT %}

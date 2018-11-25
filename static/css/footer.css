@@ -1,0 +1,154 @@
+#footer{
+    width: 100%;
+    /* height: 50vh; */
+    margin-bottom:0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(8,137,98);
+    /*background-image: linear-gradient(to bottom, rgb(6,167,94),  rgb(8,137,98) 110%);   */
+}
+
+/*-- parte superior --*/
+
+.footer1{
+    width: 100%;
+    height: 28rem;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:0;
+}
+
+.footersessao{
+    display:flex;
+    align-items: center;
+    width: 20rem;
+    height: 7.5rem;
+}
+
+#footerlogo{
+    background-image:url(../img/engaj-branco.svg);
+    background-position:cover;
+    background-repeat: no-repeat;
+    background-size: 20rem 10rem;
+    height: 10rem;
+    margin-top:0;
+}
+
+#footerdados{
+    height: 10rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerdado{
+    width:100%;
+    height:25%;
+    display:flex;
+    flex-direction: row;
+    color: white;
+}
+
+.footerdado1{
+    width:50%;
+    height:100%;
+}
+
+#footericon{
+    width:15%;
+}
+
+#footerconteudo{
+    width:85%;
+}
+
+#footerconteudo p{
+    margin-top:0;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+#footerlocal{
+    height: 2.5rem;
+    display:flex;
+    flex-direction: row;
+    color: white;
+}
+
+#footeremail, #footerfacebook, #footerinstagram, #footerlocal{
+    margin-top:1rem;
+}
+
+/*-- parte inferior --*/
+.footer2{
+    color: white;
+    width: 100%;
+    /* height: 3.5rem; */
+    border-top: 0.1rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    font-size:  1.25rem;
+}
+
+.footercredito1{
+    width:20%;
+    height:100%;
+}
+
+.footercredito, .footercredito1{
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+}
+.footercredito p{
+    margin-left: 1.5rem;
+    text-align:left;
+    /* margin-top:0.5rem; */
+}
+
+.footercredito1 p{
+    margin-top:1.5rem;
+    text-align:right;
+    /* margin-right: 1.5rem; */
+}
+
+.icon-heart{
+    display: inline-block;
+    height: 1em;
+}
+
+@media screen and (min-width:800px){
+    .footer1{
+        flex-direction:row; 
+        justify-content: center;
+        align-items: center;
+        height: 25rem;
+    }
+
+    #footerlogo{
+        float:left;
+        margin-right: 10%;
+    }
+
+    #footerdados{
+        margin-right: 8%;
+    }
+
+    #footerlocal{
+        float:right;
+        margin-top:0;
+    }
+
+    #footeremail, #footerfacebook, #footerinstagram{
+        margin-top:3rem;
+    }
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* No desenvolvimento, colocar apenas cores aqui */
+:root {
+    --cor-primaria: #17A85F;
+    --cor-secundaria: #0B8A63;
+    --cor-clara: #D7D7D7;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Mobile */
+@media screen and (max-width: 425px){
+    
+}

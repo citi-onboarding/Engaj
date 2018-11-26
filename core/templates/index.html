@@ -10,10 +10,12 @@ que serão juntos em um único arquivo antes do deploy -->
 <link rel="stylesheet" href={% static 'css/main.css' %}>
 
 <link rel="stylesheet" href={% static 'css/servicos.css' %}>
+<link rel="stylesheet" href={% static 'css/sobre.css' %}>
 <link rel="stylesheet" href={% static 'css/footer.css' %}>
 
 <!--CSS do Slick-->
-<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" 
+    href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 {% endblock CUSTOM_HEAD %}
 
@@ -26,8 +28,9 @@ que serão juntos em um único arquivo antes do deploy -->
         <!-- Incluir o template da navbar aqui -->
         <!-- Incluir o template do banner -->
     </header>
-    {% include "includes/servicos.html" %}
-    {% include "includes/footer.html" %}
+    {% include "includes/sobre.html" %}
+    {% comment %} {% include "includes/servicos.html" %} {% endcomment %}
+    {% comment %} {% include "includes/footer.html" %} {% endcomment %}
 
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>

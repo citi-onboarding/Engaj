@@ -19,7 +19,11 @@ class Sobre(models.Model):
     imagem = models.ImageField(upload_to = 'sobre/', default = 'sobre/default.jpg')
     visao = models.TextField('Visão da Engaj')
     missao = models.TextField('Missao da Engaj')
-    
+
+    class Meta:
+        verbose_name = 'Sobre'   
+        verbose_name_plural = 'Sobre'   
+
     def __str__(self):
         return "Sobre a Engaj"
 

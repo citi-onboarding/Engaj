@@ -3,12 +3,38 @@
     <div class="titulo">
         <h1 class="titulo-secao"> <i class="icon-about"></i> Sobre</h1>
     </div>
+    <p class="descricao">{{sobre.descricao}}</p>
 
     <div class="conteudo">
-        <p class="descricao">{{sobre.descricao}}</p>
+        
+        <div class="info">
+            <h1><i class="icon-mission"></i> Missão</h1>
+            <p class="descricao">
+                {{sobre.missao}}
+            </p>
+        </div>
+
+        <div class="info">
+            <h1><i class="icon-vision"></i>Visão</h1>
+            <p class="descricao">
+                {{sobre.visao}}
+            </p>
+        </div>
+
+        <div class="info">
+            <h1><i class="icon-values"></i> Valores</h1>
+            <ul class="descricao valores">
+                {% for valor in valores %}
+                <li class="valor">{{valor.descricao}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
     </div>
 
-    <div class="img">
+    <div class="imagem parallax-window" data-parallax="scroll" data-image-src="{{ sobre.imagem.url }}">
+    </div>
+
 
     </div>
 

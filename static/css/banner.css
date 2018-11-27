@@ -1,14 +1,12 @@
-section{
+
+
+#banner{
     --engajtom1: #17A85F;
     --engajtom2: #0B8A63;
     --engajtom3: #0D6A64; 
     --banner-engajtom1: #17A85F00;
     --banner-engajtom2: #0B8A6399;
-    
-}
 
-
-section{
     /*background-color: var(--engajtom1);*/
     background-image: url('../img/engaj_header_img.png'); 
     background-repeat: no-repeat;
@@ -19,7 +17,7 @@ section{
     
 }
 
-section#banner h1{
+#banner h1{
     font-size: 13rem;
     margin: 0rem;
     font-weight: 500;
@@ -44,10 +42,10 @@ a:hover{
     -webkit-transition: all 1s ease;
 }
 
-div#frase-impacto{
+#frase-impacto{
     margin-top: 200px;
 }
-div#banner-cta{ 
+#banner-cta{ 
     position: static;
     bottom: 0;
 }
@@ -62,7 +60,7 @@ div#banner-cta{
    
 }
 
-div.container{
+.container{
     display: flex;
     background: linear-gradient(145deg, rgba(23,168,95,0.85) 0%, rgba(11,138,99,0.85) 100%);
     flex-wrap: wrap;
@@ -85,17 +83,16 @@ strong{
         padding-left: 4rem;
     }
 
-    section#banner h1{
-        font-size: 13rem;
+    #banner h1{
+        font-size: 11rem;
         margin: 0rem;
         font-weight: 500;
-        color: white;
         text-align: left;
     }
     
 
 }
 
-span#negrito{
+#negrito{
     font-weight: 800;
 }

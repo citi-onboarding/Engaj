@@ -41,7 +41,7 @@
     list-style:none;
 }
 
-.navbarmenu ul li { display: inline; margin-top:1.5rem;}
+.navbarmenu ul li { display: inline; }
 
 .link{
     margin-top: 1.5rem;

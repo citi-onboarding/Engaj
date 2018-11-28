@@ -8,7 +8,7 @@ que serão juntos em um único arquivo antes do deploy -->
 
 <link rel="stylesheet" href={% static 'css/engaj-icons.css' %}>
 <link rel="stylesheet" href={% static 'css/main.css' %}>
-
+<link rel="stylesheet" href={% static 'css/navbar.css' %}>
 <link rel="stylesheet" href={% static 'css/servicos.css' %}>
 
 {% endblock CUSTOM_HEAD %}
@@ -29,6 +29,8 @@ que serão juntos em um único arquivo antes do deploy -->
     {% include "includes/servicos.html" %}
 
     <!-- Inserir o template do rodapé -->
+
+    <script src="{% static 'js/navbar.js' %}"></script>
 
 </div>
 {% endblock CONTENT %}

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Fontes */
 @font-face {
     font-family: "Neo Sans";
     src:url("../font/neo-sans-pro-light.ttf");
@@ -14,11 +15,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Neo Sans";
+    src:url("../font/neo-sans-pro.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Definições gerais */
 :root{
     font-size: 10px; /* Usar rem para tamanhos */
     font-family: "Neo Sans", sans-serif;
     font-weight: 300;
+
+    --cor-primaria: #17A85F;
+    --cor-secundaria: #0B8A63;
+    --cor-clara: #D7D7D7;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 body{
@@ -26,19 +46,62 @@ body{
     padding: 0;
 }
 
-.aux{
-    width:100%;
-    height: 100vh;
-    background-color: red;
+.botao{
+    transition: all 200ms ease-in-out;
+    background: none;
+    border: 0.2rem solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    border-radius: 2rem;
+    margin: 2rem;
+    margin-top: 0;
+    padding: 0.7rem;
+    font-size: 2rem;
+    font-family: "Neo Sans", sans-serif;
+    font-weight: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.botao:hover{
+    transition: all 100ms ease-in-out;
+    color: white;
+    background: var(--cor-primaria);
+    
+}
+
+.botao:focus{
+    outline: none;
+}
+
+.titulo-secao {
+    font-weight: 300;
+    font-size: 4rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 0;
+}
+
+.titulo{
+    margin-bottom: 20px;
+}
+
+#interface{
+    width: 100%;
+}
+
+
 /* Estilos de cada componente (incluidos antes da produção)*/
 
 /* ======= HEADER ======== */
 /* Navbar */
 /* Banner */
 
+
 /* ======= SERVIÇOS ======== */
 
 /* ======= RODAPÉ ======= */
 
 /* ======= ÍCONE DO MESSENGER ======= */
+
+/* ======= MISC ======= */

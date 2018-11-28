@@ -1,6 +1,6 @@
 function corverde() {
-    $('.navbar').css('background-color','#FFFFFF');
-    $('.navbar').css('transition-delay','0s');
+    $('.navbartotal').css('background-color','#FFFFFF');
+    $('.navbartotal').css('transition-delay','0s');
         $('.navbarlogo').css('background-image','url(static/img/engaj-verde-alt.svg)');
         $('.link a').css('color','rgb(8,137,98)');
         $('.icon-facebook-alt').css('color','rgb(8,137,98)');
@@ -9,9 +9,9 @@ function corverde() {
 }
 
 function cortransparente() {
-    $('.navbar').css('transition','0.5s ease-out');
-    $('.navbar').css('transition-delay','0.25s');
-    $('.navbar').css('background-color','');
+    $('.navbartotal').css('transition','0.5s ease-out');
+    $('.navbartotal').css('transition-delay','0.25s');
+    $('.navbartotal').css('background-color','');
         $('.navbarlogo').css('background-image','url(static/img/engaj-branco-alt.svg)');
         $('.link a').css('color','#FFFFFF');
         $('.icon-facebook-alt').css('color','#FFFFFF');

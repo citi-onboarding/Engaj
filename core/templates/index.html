@@ -8,7 +8,7 @@ que serão juntos em um único arquivo antes do deploy -->
 
 <link rel="stylesheet" href={% static 'css/engaj-icons.css' %}>
 <link rel="stylesheet" href={% static 'css/main.css' %}>
-
+<link rel="stylesheet" href={% static 'css/banner.css' %}>
 <link rel="stylesheet" href={% static 'css/servicos.css' %}>
 <link rel="stylesheet" href={% static 'css/footer.css' %}>
 
@@ -25,6 +25,7 @@ que serão juntos em um único arquivo antes do deploy -->
     <header id="cabecalho">
         <!-- Incluir o template da navbar aqui -->
         <!-- Incluir o template do banner -->
+        {% include "includes/banner.html" %}
     </header>
     {% include "includes/servicos.html" %}
     {% include "includes/footer.html" %}

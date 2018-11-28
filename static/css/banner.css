@@ -1,0 +1,98 @@
+
+
+#banner{
+    --engajtom1: #17A85F;
+    --engajtom2: #0B8A63;
+    --engajtom3: #0D6A64; 
+    --banner-engajtom1: #17A85F00;
+    --banner-engajtom2: #0B8A6399;
+
+    /*background-color: var(--engajtom1);*/
+    background-image: url('../img/engaj_header_img.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#banner h1{
+    font-size: 13rem;
+    margin: 0rem;
+    font-weight: 500;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    border: 0.3rem solid white;
+    border-radius: 12rem;
+    font-size: 5rem;
+    padding: 2.5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+a:hover{
+    border: 0.3rem solid var(--engajtom1);
+    background-color: var(--engajtom1);
+
+    -webkit-transition: all 1s ease;
+}
+
+#frase-impacto{
+    margin-top: 200px;
+}
+#banner-cta{ 
+    position: static;
+    bottom: 0;
+}
+
+
+.row{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+   
+}
+
+.container{
+    display: flex;
+    background: linear-gradient(145deg, rgba(23,168,95,0.85) 0%, rgba(11,138,99,0.85) 100%);
+    flex-wrap: wrap;
+    min-height: 813px;
+    align-items: flex-end;
+}
+
+strong{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 900px){
+    a{
+        
+        border: 0.3rem solid white;
+        border-radius: 8rem;
+        font-size: 4rem;
+        padding: 2rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+
+    #banner h1{
+        font-size: 11rem;
+        margin: 0rem;
+        font-weight: 500;
+        text-align: left;
+    }
+    
+
+}
+
+#negrito{
+    font-weight: 800;
+}

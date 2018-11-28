@@ -1,0 +1,164 @@
+#navbar{
+    width:100%;
+    height:50vh;
+    position:absolute;
+    margin-top:0;
+}
+
+.navbartotal{
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.05s ease-out;
+}
+
+.navbarlogo{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/engaj-branco-alt.svg);
+    background-size: 11.12rem 3.5rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 2rem;
+    transition: 0.5s ease-in;
+}
+
+.navbarmenu{
+    width: 50%;
+    height: 100%;
+    margin-right: 2rem;
+}
+
+.navbarmenu ul {
+    padding:0px;
+    margin-top: 1rem;
+    display:flex;
+    flex-direction: row;
+    float:right;
+    list-style:none;
+}
+
+.navbarmenu ul li { display: inline; }
+
+.link{
+    margin-top: 1.5rem;
+    padding-right: 2rem;
+}
+
+.link a, .link1 a{
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#navbarhome{
+    width:6.063rem;
+    height:2.2rem;
+}
+
+#navbarsobre{
+    width:5.977rem;
+    height:2.2rem;
+}
+
+#navbarservicos{
+    width:7.781rem;
+    height:2.2rem;
+}
+
+#navbarcontato{
+    width:7.405rem;
+    height:2.2rem;
+}
+
+.link a:hover{
+    padding-bottom: 0.7rem;
+    border-bottom: 0.2rem solid rgb(8,137,98);
+}
+
+.link1 a{
+    width: 100%;
+    color: rgb(8,137,98);
+    text-align: center;
+}
+
+.link1{
+    margin-top:1rem;
+}
+
+.link1 a:hover{
+    text-align: underline;
+}
+
+.linha{
+    width:100%;
+    height:1px;
+    margin-top: 1rem;
+    background-color:lightgray;
+}
+
+.navbarmenu i{
+    float:right;
+}
+
+.navbarmenusanduiche{
+    position:fixed;
+    display:none;
+    width:100%;
+    height:32vh;
+    margin-top:6rem;
+    justify-items:center;
+    background-color: white;
+}
+
+.fbinst{
+    width: 7rem;
+    margin-top:1.25rem;
+}
+
+#navbarcontato{
+    padding-right:0;
+}
+
+.icon-facebook-alt, .icon-instagram-alt{
+    font-size:2.25rem;
+    color: white;
+    float:bottom;
+    transition: 0.5s ease-in;
+}
+
+.icon-menu{
+    font-size:4rem;
+    color: white;
+    display: inline-block;
+    transition: 0.5s ease-in;
+}
+
+@media screen and (min-width:620px){
+    .navbarlogo{
+        width:30%;
+    }
+
+    .navbarmenu{
+        width:70%;
+    }
+
+    .icon-menu{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width:620px){
+    .navbarmenu ul{
+        display:none;
+    }
+
+    .navbarmenu i{
+        margin-top: 1rem;
+    }
+}

@@ -8,6 +8,8 @@ que serão juntos em um único arquivo antes do deploy -->
 
 <link rel="stylesheet" href={% static 'css/engaj-icons.css' %}>
 <link rel="stylesheet" href={% static 'css/main.css' %}>
+
+<link rel="stylesheet" href={% static 'css/navbar.css' %}>
 <link rel="stylesheet" href={% static 'css/banner.css' %}>
 <link rel="stylesheet" href={% static 'css/servicos.css' %}>
 <link rel="stylesheet" href={% static 'css/sobre.css' %}>
@@ -26,9 +28,11 @@ que serão juntos em um único arquivo antes do deploy -->
 <div id="interface">
     <header id="cabecalho">
         <!-- Incluir o template da navbar aqui -->
+        {% include "includes/navbar.html" %}
         <!-- Incluir o template do banner -->
         {% include "includes/banner.html" %}
     </header>
+
     {% include "includes/servicos.html" %}
     {% include "includes/sobre.html" %}
     {% include "includes/footer.html" %}
@@ -36,7 +40,7 @@ que serão juntos em um único arquivo antes do deploy -->
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+<script src={% static 'js/navbar.js' %}></script>
 <!--JS do Slick-->
 <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 

@@ -37,7 +37,7 @@ $('.icon-menu').on("click", function() {
 })
 
 $(window).on("scroll", function() {
-    if($(window).scrollTop() < $(window).height()){
+    if($(window).scrollTop()+100 < $(window).height()){
         if(c===1) corverde();
         else cortransparente();
     } else{

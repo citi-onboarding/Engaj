@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView 
+from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
+from templated_email import send_templated_mail
 from core.models import *
 
 # Create your views here.
@@ -16,7 +19,7 @@ class IndexView(TemplateView):
         
         return context
 
-    def contato(request):
+    def contato(self, request):
         if request.method == 'POST':
             name = request.POST.get('name')
             email = request.POST.get('email')

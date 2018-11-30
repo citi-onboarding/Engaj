@@ -24,7 +24,7 @@
     color: white;
 }
 
-a{
+#banner a{
     text-decoration: none;
     color: white;
     border: 0.3rem solid white;
@@ -35,7 +35,7 @@ a{
     padding-left: 5rem;
 }
 
-a:hover{
+#banner a:hover{
     border: 0.3rem solid var(--engajtom1);
     background-color: var(--engajtom1);
 

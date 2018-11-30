@@ -40,6 +40,6 @@ class IndexView(TemplateView):
                 }
             )
 
-            return HttpResponseRedirect(reverse_lazy('contato'))
+            return HttpResponseRedirect(reverse('IndexView.as_view()'))
         
-        return render(request,'core/index.html',{})
+        return render(request,'',{})

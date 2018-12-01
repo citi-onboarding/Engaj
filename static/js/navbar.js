@@ -1,5 +1,5 @@
 function corverde() {
-    $('.navbartotal').css('transition','0.5s ease-out');
+    $('.navbartotal').css('transition-delay','0s');
     $('.navbartotal').css('background-color','#FFFFFF');
         $('.navbarlogo').css('background-image','url(static/img/logos/engaj-verde-alt.svg)');
         $('.link a').css('color','rgb(8,137,98)');
@@ -10,6 +10,7 @@ function corverde() {
 
 function cortransparente() {
     $('.navbartotal').css('transition','0.5s ease-out');
+    $('.navbartotal').css('transition-delay','0.25s');
     $('.navbartotal').css('background-color','');
         $('.navbarlogo').css('background-image','url(static/img/logos/engaj-branco-alt.svg)');
         $('.link a').css('color','#FFFFFF');
@@ -17,7 +18,6 @@ function cortransparente() {
         $('.icon-instagram-alt').css('color','#FFFFFF');
         $('.icon-menu').css('color','FFFFFF');
 }
-
 
 var c = 0;
 
@@ -29,20 +29,30 @@ $('.icon-menu').on("click", function() {
     }else{
         c=0;
         $('.navbarmenusanduiche').animate({height:'toggle'},250);
-        if($(window).scrollTop() < $(window).height()){
-            cortransparente();
-        }
+        if($(window).scrollTop() > ($(window).height()*0.2)){
+            corverde();
+        }else cortransparente();
     }
     
 })
 
 $(window).on("scroll", function() {
-    if($(window).scrollTop()+100 < $(window).height()){
+    if($(window).scrollTop() < ($(window).height() * 0.2)) {
         if(c===1) corverde();
         else cortransparente();
     } else{
         corverde();
     }
 })
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - ($(window).height() * 0.05)
+    }, 800);
+});
+
+
 
 

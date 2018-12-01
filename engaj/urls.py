@@ -23,4 +23,5 @@ from core.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexView.as_view()),
+    path('send_email/', send_email, name='send_email'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

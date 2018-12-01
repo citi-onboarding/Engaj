@@ -33,7 +33,7 @@ mkdir env/
 Crie o ambiente virtual. Nesse caso, usando o `virtualenv` no Linux, basta executar:
 
 ```
-virtualenv env/ --python 3
+virtualenv env/ -p python3
 ```
 Ative-o:
 

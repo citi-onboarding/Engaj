@@ -15,3 +15,28 @@ class IndexView(TemplateView):
         context["valores"] = Valor.objects.all()
         
         return context
+
+    def contato(request):
+        if request.method == 'POST':
+            name = request.POST.get('name')
+            email = request.POST.get('email')
+            servico = request.POST.get('servico')
+            message = request.POST.get('message')
+            conhecer = request.POST.get('conhecer')
+
+            send_templated_mail(
+                template_name='email',
+                from_email='email',
+                recipient_list=['abcr@cin.ufpe.br'],
+                context={
+                    'nome':name,
+                    'email':email,
+                    'servico':servico,
+                    'mensagem':message,
+                    'conhecer':conhecer
+                }
+            )
+
+            return HttpResponseRedirect(reverse_lazy('contato'))
+        
+        return render(request,'core/index.html',{})

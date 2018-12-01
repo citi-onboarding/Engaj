@@ -1,5 +1,5 @@
 function corverde() {
-    $('.navbartotal').css('transition','0.5s ease-out');
+    $('.navbartotal').css('transition-delay','0s');
     $('.navbartotal').css('background-color','#FFFFFF');
         $('.navbarlogo').css('background-image','url(static/img/logos/engaj-verde-alt.svg)');
         $('.link a').css('color','rgb(8,137,98)');
@@ -10,10 +10,10 @@ function corverde() {
 
 function cortransparente() {
     $('.navbartotal').css('transition','0.5s ease-out');
+    $('.navbartotal').css('transition-delay','0.25s');
     $('.navbartotal').css('background-color','');
         $('.navbarlogo').css('background-image','url(static/img/logos/engaj-branco-alt.svg)');
         $('.link a').css('color','#FFFFFF');
-        $('link a').css('border-bottom','0.2rem solid #FFFFFF');
         $('.icon-facebook-alt').css('color','#FFFFFF');
         $('.icon-instagram-alt').css('color','#FFFFFF');
         $('.icon-menu').css('color','FFFFFF');
@@ -24,12 +24,12 @@ var c = 0;
 $('.icon-menu').on("click", function() {
     if(c===0){
         c=1;
-        $('.menusanduiche').animate({top:0, height:'toggle'},900);
+        $('.navbarmenusanduiche').animate({top:0, height:'toggle'},900);
         corverde();
     }else{
         c=0;
-        $('.menusanduiche').animate({height:'toggle'},250);
-        if($(window).scrollTop() > ($(window).height()*0.1)){
+        $('.navbarmenusanduiche').animate({height:'toggle'},250);
+        if($(window).scrollTop() > ($(window).height()*0.2)){
             corverde();
         }else cortransparente();
     }
@@ -37,7 +37,7 @@ $('.icon-menu').on("click", function() {
 })
 
 $(window).on("scroll", function() {
-    if($(window).scrollTop() < ($(window).height() * 0.1)) {
+    if($(window).scrollTop() < ($(window).height() * 0.2)) {
         if(c===1) corverde();
         else cortransparente();
     } else{
@@ -49,7 +49,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - ($(window).height() * 0.1)
+        scrollTop: $($.attr(this, 'href')).offset().top - ($(window).height() * 0.05)
     }, 800);
 });
 

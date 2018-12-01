@@ -1,4 +1,44 @@
 {% load static %}
 <section id="servicos">
 
+    <div class = "titulo">
+        <h1 class="titulo-secao"> <i class="icon-services"></i> Serviços</h1>
+    </div>
+    
+    <div class = wrapper>
+
+        <span class="arrow prev "><i class="icon-arrow-right"></i></span>
+       
+        <div id="slick-servicos">
+            {% for servico in servicos %}
+            <div class="card">
+                <!--Figura que contem o servico e o nome-->
+                <div class = "servico-titulo">
+                    <h1> {{servico.nome}} </h1>
+                </div>
+
+                <!--Corta o tamanho da imagem-->
+                <div class="vp">
+                    <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
+                </div>
+
+                <!--Descrição e CTA-->
+                <div class = "servico-descricao">
+                    <!--Descrição do serviço-->
+                    <div>
+                        <p>{{servico.descricao}}</p>
+                    </div>
+
+                    <!--Call to Action-->
+                    <div>
+                        <button class="botao" href="#"> <span> Contrate Já!</span></button>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+        <span class="arrow next esconder-m "><i class="icon-arrow-left"></i></span>
+    </div>
+
 </section>

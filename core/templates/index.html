@@ -6,23 +6,64 @@
 <!-- Incluir os estilos de cada componente no desenvolvimento,
 que serão juntos em um único arquivo antes do deploy -->
 
+<link rel="stylesheet" href={% static 'css/engaj-icons.css' %}>
+<link rel="stylesheet" href={% static 'css/main.css' %}>
+
+<link rel="stylesheet" href={% static 'css/navbar.css' %}>
+<link rel="stylesheet" href={% static 'css/banner.css' %}>
+<link rel="stylesheet" href={% static 'css/servicos.css' %}>
+<link rel="stylesheet" href={% static 'css/sobre.css' %}>
+<link rel="stylesheet" href={% static 'css/footer.css' %}>
+
+<!--CSS do Slick-->
+<link rel="stylesheet" type="text/css" 
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 {% endblock CUSTOM_HEAD %}
 
 {% block TITLE %} Engaj - Home {% endblock TITLE %}
 
 {% block CONTENT %}
 
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="183923651764470"
+      theme_color="#17A85F"
+      minimized="false"
+      logged_in_greeting="Olá! Como posso te ajudar?"
+      logged_out_greeting="Olá! Como posso te ajudar?">
+    </div>
+
 <div id="interface">
     <header id="cabecalho">
         <!-- Incluir o template da navbar aqui -->
+        {% include "includes/navbar.html" %}
         <!-- Incluir o template do banner -->
+        {% include "includes/banner.html" %}
     </header>
 
-    
-    <!-- Seção de serviços -->
     {% include "includes/servicos.html" %}
-
-    <!-- Inserir o template do rodapé -->
+    {% include "includes/sobre.html" %}
+    {% include "includes/footer.html" %}
 
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src={% static 'js/navbar.js' %}></script>
+<!--JS do Slick-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src={% static 'js/slick-servicos.js' %}></script>
+<script src={% static 'js/parallax.js-1.5.0/parallax.min.js'%}></script>
 {% endblock CONTENT %}

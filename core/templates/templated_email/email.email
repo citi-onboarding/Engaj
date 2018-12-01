@@ -1,0 +1,14 @@
+{% block subject %}[PTA Django - Contato] {{nome}} {% endblock %}
+
+{% block html %}
+<h4> Nome: </b>{{ nome }} </h4>
+<br></br>
+E-mail: </b>{{ email }}
+<br></br>
+Serviço: </b>{{ servico }}
+<br></br>
+Mensagem: </b>{{ mensagem }}
+<br></br>
+Como nos conheceu: </b>{{ conhecer }}
+
+{% endblock %}

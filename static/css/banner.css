@@ -1,5 +1,3 @@
-
-
 #banner{
     --engajtom1: #17A85F;
     --engajtom2: #0B8A63;
@@ -8,64 +6,52 @@
     --banner-engajtom2: #0B8A6399;
 
     /*background-color: var(--engajtom1);*/
-    background-image: url('../img/engaj_header_img.png'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: no-repeat center/cover url('../img/engaj_header_img.png') ; 
     width: 100%;
-    text-align: center;
-    
+    height: 100vh;
+    text-align: center;   
 }
 
 #banner h1{
-    font-size: 13rem;
+    font-size: 10rem;
     margin: 0rem;
+    width: 70vw;
     font-weight: 500;
     color: white;
 }
 
-a{
+#banner a{
     text-decoration: none;
     color: white;
-    border: 0.3rem solid white;
+    border: 0.2rem solid white;
     border-radius: 12rem;
-    font-size: 5rem;
-    padding: 2.5rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+    width: 30rem;
+    margin-block-start: 3rem;
+    transition: all 200ms ease-in-out;
 }
 
-a:hover{
-    border: 0.3rem solid var(--engajtom1);
-    background-color: var(--engajtom1);
-
-    -webkit-transition: all 1s ease;
-}
-
-#frase-impacto{
-    margin-top: 200px;
-}
-#banner-cta{ 
-    position: static;
-    bottom: 0;
-}
-
-
-.row{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 70px;
-   
+#banner a:hover{
+    border-color: white;
+    color: var(--engajtom2);
+    background-color: white;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
 }
 
 .container{
-    display: flex;
     background: linear-gradient(145deg, rgba(23,168,95,0.85) 0%, rgba(11,138,99,0.85) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    min-height: 813px;
-    align-items: flex-end;
+    height: 100vh;
+    /* min-height: 81rem; */
 }
 
 strong{
@@ -73,24 +59,16 @@ strong{
 }
 
 @media screen and (max-width: 900px){
-    a{
-        
-        border: 0.3rem solid white;
-        border-radius: 8rem;
-        font-size: 4rem;
-        padding: 2rem;
-        padding-right: 4rem;
-        padding-left: 4rem;
+    
+    #banner a{
+        width: 65%;        
     }
 
     #banner h1{
-        font-size: 11rem;
-        margin: 0rem;
+        font-size: 6rem;
         font-weight: 500;
         text-align: left;
     }
-    
-
 }
 
 #negrito{

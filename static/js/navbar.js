@@ -1,7 +1,7 @@
 function corverde() {
-    $('.navbar').css('background-color','#FFFFFF');
-    $('.navbar').css('transition-delay','0s');
-        $('.navbarlogo').css('background-image','url(static/img/engaj-verde-alt.svg)');
+    $('.navbartotal').css('transition','0.5s ease-out');
+    $('.navbartotal').css('background-color','#FFFFFF');
+        $('.navbarlogo').css('background-image','url(static/img/logos/engaj-verde-alt.svg)');
         $('.link a').css('color','rgb(8,137,98)');
         $('.icon-facebook-alt').css('color','rgb(8,137,98)');
         $('.icon-instagram-alt').css('color','rgb(8,137,98)');
@@ -9,10 +9,9 @@ function corverde() {
 }
 
 function cortransparente() {
-    $('.navbar').css('transition','0.5s ease-out');
-    $('.navbar').css('transition-delay','0.25s');
-    $('.navbar').css('background-color','');
-        $('.navbarlogo').css('background-image','url(static/img/engaj-branco-alt.svg)');
+    $('.navbartotal').css('transition','0.5s ease-out');
+    $('.navbartotal').css('background-color','');
+        $('.navbarlogo').css('background-image','url(static/img/logos/engaj-branco-alt.svg)');
         $('.link a').css('color','#FFFFFF');
         $('link a').css('border-bottom','0.2rem solid #FFFFFF');
         $('.icon-facebook-alt').css('color','#FFFFFF');

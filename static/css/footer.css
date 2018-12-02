@@ -86,15 +86,15 @@
     margin-top:1rem;
 }
 
-a:link{
+#footer a:link{
     text-decoration: none;
     color: white;
 }
-a:hover{
+#footer a:hover{
     text-decoration: none;
     color: white;
 }
-a:visited{
+#footer a:visited{
     text-decoration: none;
     color:white;
 }

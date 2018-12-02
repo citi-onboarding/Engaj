@@ -1,8 +1,8 @@
 # Site - ENGAJ
-A ENGAJ é a empresa Júnior do curso de Engenharia Ambiental da USP São Carlos. Essa one-page foi costruída durante o PSC 2018.2.
+A ENGAJ é a empresa Júnior do curso de Engenharia Ambiental da USP São Carlos. Essa one-page foi costruída durante o PSC 2018.2. Preview: http://engaj-staging.herokuapp.com/
 
 ## Primeiros passos
-Siga estes passos, caso queira ter uma cópia do projeto configurada e executando no seu host local, para propósitos de desenvolvimento e testes. Veja a seção `Realizando Deploy` para entender como fazer a instalação em um ambiente de produção.
+Siga estes passos, caso queira ter uma cópia do projeto configurada e executando no seu host local, para propósitos de desenvolvimento e testes. Veja a seção [`Realizando Deploy`](#realizando-deploy) para entender como fazer a instalação em um ambiente de produção.
 
 ### Requisitos
 Nesse tutorial, está coberto apenas o procedimento para configuração em um ambiente Linux. Assim, é necessário possuir `python3` e `virtualenv` instalandos. Caso não os possua, é possível obtê-los no Ubuntu pelo comando:
@@ -33,7 +33,7 @@ mkdir env/
 Crie o ambiente virtual. Nesse caso, usando o `virtualenv` no Linux, basta executar:
 
 ```
-virtualenv env/ --python 3
+virtualenv env/ -p python3
 ```
 Ative-o:
 

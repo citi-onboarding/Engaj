@@ -12,13 +12,14 @@ A ENGAJ é a empresa Júnior do curso de Engenharia Ambiental da USP São Carlos
 Siga estes passos, caso queira ter uma cópia do projeto configurada e executando no seu host local, para propósitos de desenvolvimento e testes. Veja a seção [`Realizando Deploy`](#realizando-deploy) para entender como fazer a instalação em um ambiente de produção.
 
 ### Requisitos
-Nesse tutorial, está coberto apenas o procedimento para configuração em um ambiente Linux. Assim, é necessário possuir `python3` e `virtualenv` instalandos. Caso não os possua, é possível obtê-los no Ubuntu pelo comando:
+É necessário possuir `python3` e `virtualenv` instalandos. Caso não os possua, é possível obtê-los (no Ubuntu) pelo comando:
 
 ```
 sudo apt install python3 virtualenv -y
 ```
 
 ### Ambiente para desenvolvimento
+## Ubuntu e Derivados
 Inicialmente, obtenha o código da aplicação. Utilizando o git, você teria algo assim:
 
 ```

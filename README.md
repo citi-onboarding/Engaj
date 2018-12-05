@@ -1,4 +1,11 @@
-# Site - ENGAJ
+<p align="center">
+  <img src="https://github.com/citi-onboarding/Engaj/blob/develop/static/img/logos/engaj-verde-alt.svg" width="350" title="Engaj">
+</p>
+<p align=center>
+  <img src=https://img.shields.io/badge/Status-WIP-green.svg?style=for-the-badge&colorB=8cbc4e>
+  <img src=https://img.shields.io/badge/PSC-2018.2-green.svg?style=for-the-badge&colorB=8cbc4e>
+</p>
+
 A ENGAJ é a empresa Júnior do curso de Engenharia Ambiental da USP São Carlos. Essa one-page foi costruída durante o PSC 2018.2. Preview: http://engaj-staging.herokuapp.com/
 
 ## Primeiros passos

@@ -19,7 +19,7 @@ sudo apt install python3 virtualenv -y
 ```
 
 ### Ambiente para desenvolvimento
-## Ubuntu e Derivados
+#### Ubuntu e Derivados
 Inicialmente, obtenha o código da aplicação. Utilizando o git, você teria algo assim:
 
 ```

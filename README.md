@@ -87,8 +87,11 @@ Veja [Deploy com Heroku](https://devcenter.heroku.com/articles/github-integratio
 * [Django Storage](https://django-storages.readthedocs.io/en/latest/) - Biblioteca para mudar onde os arquivos de mídia são armazenados
 * [Heroku](https://dashboard.heroku.com/) - Plataforma usada para deploy
 
-## Autores
+## Desenvolvedores
 
 * **Júnior Mendes** - [jrmmendes](https://github.com/jrmmendes)
 * **Ana Beatriz** - [abcr98](https://github.com/abcr98)
 * **Lucas Zacarias** - [lucaszsd](https://github.com/lucaszsd)
+
+## Gerente
+* **João Felix** - [jvbfelix](https://github.com/jvbfelix)

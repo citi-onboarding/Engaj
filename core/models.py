@@ -2,6 +2,13 @@ from django.db import models
 from django import forms
 
 # Create your models here.
+
+class Banner(models.Model):
+    frase = models.CharField('Frase para o banner inicial', max_length=30)
+
+    def __str__(self):
+        return self.frase
+
 class Servico(models.Model):
     nome = models.CharField('Nome do serviço', max_length=100)
     descricao = models.TextField('Descrição do Serviço')

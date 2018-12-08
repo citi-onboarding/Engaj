@@ -4,7 +4,7 @@ from django import forms
 # Create your models here.
 
 class Banner(models.Model):
-    frase = models.CharField('Frase para o banner inicial', max_length=30)
+    frase = models.CharField('Frase para o banner inicial', max_length=40)
 
     def __str__(self):
         return self.frase

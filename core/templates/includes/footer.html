@@ -1,36 +1,47 @@
 {% load static %}
 <section id="footer">
-    <div class="footer1">
-        <div class="footersessao" id="footerlogo"></div>
-        <div class="footersessao" id="footerdados">
-            <div class="footerdado" id="footertelefone">
-                <div class="footerdado1" id="footericon"><i class="icon icon-phone"></i></div>
-                <div class="footerdado1" id="footerconteudo"><p>(11) 95433-7616</p></div>
-            </div>
-            <div class="footerdado" id="footeremail">
-                <div class="footerdado1" id="footericon"><i class="icon icon-mail"></i></div>
-                <div class="footerdado1" id="footerconteudo"><p>engaj.contato@gmail.com</p></div>
-            </div>
-            <div class="footerdado" id="footerfacebook">
-                <div class="footerdado1" id="footericon"><i class="icon icon-facebook"></i></div>
-                <div class="footerdado1" id="footerconteudo"><p>@ENGAJusp</p></div>
-            </div>
-            <div class="footerdado" id="footerinstagram">
-                <div class="footerdado1" id="footericon"><i class="icon icon-instagram"></i></div>
-                <div class="footerdado1" id="footerconteudo"><p>@engajusp</p></div>
-            </div>
-        </div>
-        <div class="footersessao" id="footerlocal">
-            <div class="footerdado1" id="footericon"><a href="https://goo.gl/maps/gN3aVB8nCzm" target="_blank"><i class="icon icon-place"></i></a></div>
-            <div class="footerdado1" id="footerconteudo"><p><a href="https://goo.gl/maps/gN3aVB8nCzm" target="_blank">Avenida Trabalhador São Carlense, 400. São Carlos.</a></p></div>
-        </div>
+  <div class="footer1">
+    <div class="footersessao" id="footerlogo"></div>
+    <div class="footersessao" id="footerdados">
+
+      <div class="footerdado" id="footertelefone">
+        <div class="footerdado1" id="footericon"><i class="icon icon-phone"></i></div>
+        <div class="footerdado1" id="footerconteudo"><p>{{contato.telefone}}</p></div>
+      </div>
+
+      <div class="footerdado" id="footeremail">
+        <div class="footerdado1" id="footericon"><i class="icon icon-mail"></i></div>
+        <div class="footerdado1" id="footerconteudo"><p>{{contato.email}}</p></div>
+      </div>
+
+      <div class="footerdado" id="footerfacebook">
+        <div class="footerdado1" id="footericon"><i class="icon icon-facebook"></i></div>
+        <div class="footerdado1" id="footerconteudo"><p>{{contato.facebook}}</p></div>
+      </div>
+
+      <div class="footerdado" id="footerinstagram">
+        <div class="footerdado1" id="footericon"><i class="icon icon-instagram"></i></div>
+        <div class="footerdado1" id="footerconteudo"><p>{{contato.instagram}}</p></div>
+      </div>
     </div>
-    <div class="footer2">
-        <div class="footercredito">
-            <p>Copyright © 2018 Engaj</p>
-        </div>
-        <div class="footercredito1">
-            <p>Make with &lt/> and <i class="icon-heart"></i></p>
-        </div>
+    <div class="footersessao" id="footerlocal">
+      <div class="footerdado1" id="footericon">
+        <a href="https://goo.gl/maps/gN3aVB8nCzm" target="_blank"><i class="icon icon-place"></i></a>
+      </div>
+
+      <!-- <div class="footerdado1" id="footerconteudo"><p><a href="https://goo.gl/maps/gN3aVB8nCzm" target="_blank">Avenida Trabalhador São Carlense, 400. São Carlos.</a></p></div> -->
+      <div class="footerdado1" id="footerconteudo">
+        <p><a href="{{contato.gmaps}}" target="_blank">{{contato.local}}</a></p>
+      </div>
+
     </div>
+  </div>
+  <div class="footer2">
+    <div class="footercredito">
+      <p>Copyright © 2018 Engaj</p>
+    </div>
+    <div class="footercredito1">
+      <p>Make with &lt/> and <i class="icon-heart"></i></p>
+    </div>
+  </div>
 </section>

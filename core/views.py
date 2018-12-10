@@ -17,6 +17,7 @@ class IndexView(TemplateView):
         
         context["sobre"] = Sobre.objects.last()
         context["valores"] = Valor.objects.all()
+        context["contato"] = Contato.objects.last()
         
         return context
 

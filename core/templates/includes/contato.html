@@ -1,29 +1,36 @@
 {% load static %}
 
 <section id="contato">
-  
+
   <h1 class="titulo-secao"> <i class="icon-contact"></i> Fale conosco </h1>
 
-  <form method='post' action="/send_email/">
+  <form method="post" action="/send_email/">
     {% csrf_token %}
-    <input placeholder = 'Nome' type='text' name='name'>
-    <input placeholder = 'E-mail' type='email' name='email'>
-    <select name='servico' placeholder='serviço desejado'>
+
+    <input class="" placeholder="Nome" type="text" name="name">
+    <input class="" placeholder="E-mail" type="email" name="email">
+
+    <select class="" name="servico">
       <option value="" disabled selected> Selecione um serviço </option> 
       {% for servico in servicos %}
       <option value="{{servico.nome}}">{{servico.nome}}</option>
       {% endfor %}  
 
     </select>
-    <textarea placeholder='Digite sua mensagem aqui' name='message'></textarea>
-    <select id="forma-contato" name='conhecer'>
+    
+    <textarea 
+      class="" 
+      name='message'></textarea>
+    
+    <select class="" name='conhecer'>
       <option value="" disabled selected>Como nos conheceu? </option>
       <option value="Facebook">Facebook</option>
-
       <option value="Instagram">Instagram</option>
       <option value="Indicações">Indicações</option>
       <option value="E-mail">E-mail</option>
     </select>
-    <button type='submit'>Enviar</button>
+
+    <input class="" type="submit" value="enviar">
+
   <form>
 </section>

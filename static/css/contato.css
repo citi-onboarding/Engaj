@@ -7,5 +7,46 @@
 #contato{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+#contato form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contato *:focus{
+ outline: none;
+}
+#contato form input,
+#contato form select,
+#contato form option,
+#contato form textarea{
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 2px solid var(--cor-secundaria);
+  font-family: "Neo Sans", sans-serif;
+  background-color: white;
+}
+
+#contato form textarea{
+  height: 20rem;
+}
+
+#contato input[type=submit]{
+  transition: all 200ms ease-in-out;
+  
+}
+
+#contato input[type=submit]:hover{
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  background: var(--cor-secundaria);
 }

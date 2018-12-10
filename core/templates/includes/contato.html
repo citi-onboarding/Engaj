@@ -1,26 +1,29 @@
 {% load static %}
-<form method='post' action="/send_email/">
+
+<section id="contato">
+  
+  <h1 class="titulo-secao"> <i class="icon-contact"></i> Fale conosco </h1>
+
+  <form method='post' action="/send_email/">
     {% csrf_token %}
-    <h1> Fale conosco </h1>
     <input placeholder = 'Nome' type='text' name='name'>
-    <br></br>
     <input placeholder = 'E-mail' type='email' name='email'>
-    <br></br>
     <select name='servico' placeholder='serviço desejado'>
-        <option value="s1">Serviço 1</option>
-        <option value="s2">Serviço 2</option>
-        <option value="s3">Serviço 3</option>
-        <option value="s4">Serviço 4</option>
+      <option value="" disabled selected> Selecione um serviço </option> 
+      {% for servico in servicos %}
+      <option value="{{servico.nome}}">{{servico.nome}}</option>
+      {% endfor %}  
+
     </select>
-    <br></br>
-    <textarea placeholder='Digite sua mensagem aqui :)' name='message'></textarea>
-    <br></br>
-    <select name='conhecer' placeholder='como nos conheceu?'>
-        <option value="Facebook">Facebook</option>
-        <option value="Instagram">Instagram</option>
-        <option value="Indicações">Indicações</option>
-        <option value="E-mail">E-mail</option>
+    <textarea placeholder='Digite sua mensagem aqui' name='message'></textarea>
+    <select id="forma-contato" name='conhecer'>
+      <option value="" disabled selected>Como nos conheceu? </option>
+      <option value="Facebook">Facebook</option>
+
+      <option value="Instagram">Instagram</option>
+      <option value="Indicações">Indicações</option>
+      <option value="E-mail">E-mail</option>
     </select>
-    <br></br>
     <button type='submit'>Enviar</button>
-<form>
+  <form>
+</section>

@@ -1,0 +1,11 @@
+:root{
+    --cor-primaria: #17A85F;
+    --cor-secundaria: #0B8A63;
+    --cor-clara: #D7D7D7;
+}
+
+#contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

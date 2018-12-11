@@ -9,10 +9,12 @@
     <input placeholder="Nome" type="text" name="name">
     <input placeholder="E-mail" type="email" name="email">
 
-    <select class="" name="servico">
+    <select name="servico">
       <option value="" disabled selected> Selecione um serviço </option> 
       {% for servico in servicos %}
       <option value="{{servico.nome}}">{{servico.nome}}</option>
+      {% empty %}
+      <option value="Nenhum serviço cadastrado">Nenhum serviço cadastrado</option>
       {% endfor %}  
 
     </select>

@@ -21,8 +21,8 @@
  outline: none;
 }
 #contato form input,
-#contato form select,
 #contato form option,
+#contato form select,
 #contato form textarea{
   margin: 1rem 0;
   font-size: 1.7rem;
@@ -42,5 +42,35 @@
 }
 #contato .botao{
   width: 100%;
+}
+
+select{
+  transition: background 100ms linear;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  
+  margin: 30px 0;
+  padding: 10px 30px 10px 20px;
+
+  border-radius: 30px;
+  box-sizing: box-border;
+  border: 2px solid #28744E;
+  background: url(../img/select-arrow-up-down.svg) no-repeat;
+  background-position: right center; 
+  background-size: 2em;
+  width: 100%; 
+  font-size: 0.9rem;
+}
+
+select:focus{
+  transition: background 100ms linear;
+  outline: none;
+}
+
+select:hover{
+  cursor: pointer;
 }
 

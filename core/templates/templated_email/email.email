@@ -10,5 +10,7 @@
 <br>
 <a href="mailto:{{email}}">{{ email }}</a>
 <br>
-Como nos conheceu: </b>{{ conhecer }}
+{{ telefone }}
+<br>
+Como nos conheceu: </b>{{ forma_contato }}
 {% endblock %}

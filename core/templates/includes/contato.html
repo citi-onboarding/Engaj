@@ -8,7 +8,8 @@
     {% csrf_token %}
     <input placeholder="Nome" type="text" name="name">
     <input placeholder="E-mail" type="email" name="email">
-
+    <input placeholder="telefone" type="text" name="telefone">
+    
     <select name="servico">
       <option value="" disabled selected> Selecione um serviço </option> 
       {% for servico in servicos %}
@@ -23,7 +24,7 @@
       placeholder="Mensagem" 
       name="message"></textarea>
     
-    <select name='conhecer'>
+    <select name='forma-contato'>
       <option value="" disabled selected>Como nos conheceu? </option>
       <option value="Facebook">Facebook</option>
       <option value="Instagram">Instagram</option>

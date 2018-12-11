@@ -133,8 +133,8 @@ TEMPLATED_EMAIL_FILE_EXTENSION = 'email'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'testedjangojr@gmail.com'
-EMAIL_HOST_PASSWORD = 'senhaDJANGO'
+EMAIL_HOST_USER = 'joseromildomendesjunior@gmail.com'
+EMAIL_HOST_PASSWORD = 'gm2@9912XzY_1502J'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 DROPBOX_OAUTH2_TOKEN=os.environ['DROPBOX_ACCESS_TOKEN']

@@ -6,9 +6,8 @@
 
   <form method="post" action="/send_email/">
     {% csrf_token %}
-
-    <input class="" placeholder="Nome" type="text" name="name">
-    <input class="" placeholder="E-mail" type="email" name="email">
+    <input placeholder="Nome" type="text" name="name">
+    <input placeholder="E-mail" type="email" name="email">
 
     <select class="" name="servico">
       <option value="" disabled selected> Selecione um serviço </option> 
@@ -19,10 +18,10 @@
     </select>
     
     <textarea 
-      class="" 
-      name='message'></textarea>
+      placeholder="Mensagem" 
+      name="message"></textarea>
     
-    <select class="" name='conhecer'>
+    <select name='conhecer'>
       <option value="" disabled selected>Como nos conheceu? </option>
       <option value="Facebook">Facebook</option>
       <option value="Instagram">Instagram</option>
@@ -30,7 +29,7 @@
       <option value="E-mail">E-mail</option>
     </select>
 
-    <input class="" type="submit" value="enviar">
+    <button class="botao" type="submit">Enviar</button>
 
-  <form>
+  </form>
 </section>

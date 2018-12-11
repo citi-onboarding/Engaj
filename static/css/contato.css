@@ -34,19 +34,13 @@
   border: 2px solid var(--cor-secundaria);
   font-family: "Neo Sans", sans-serif;
   background-color: white;
+
 }
 
 #contato form textarea{
   height: 20rem;
 }
-
-#contato input[type=submit]{
-  transition: all 200ms ease-in-out;
-  
+#contato .botao{
+  width: 100%;
 }
 
-#contato input[type=submit]:hover{
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-  background: var(--cor-secundaria);
-}

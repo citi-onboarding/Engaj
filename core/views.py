@@ -32,7 +32,7 @@ def send_email(request):
         send_templated_mail(
             template_name='email',
             from_email='email',
-            recipient_list=['engaj.recipient@gmail.com'],
+            recipient_list=['jrmmendesg@gmail.com'],
             context={
                 'nome':name,
                 'email':email,

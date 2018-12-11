@@ -1,13 +1,14 @@
 {% block subject %}[Contato] {{nome}} - {{servico}} {% endblock %}
 
 {% block html %}
-<h1><b> Nome: </b>{{ nome }} </h1>
-<br>
-<a href="mailto:{{email}}"{{ email }}</a>
-<br>
-Como nos conheceu: </b>{{ conhecer }}
-<br>
-<b>Mensagem: </b>{{ mensagem }}
+<p>{{ mensagem }}</p>
 <br>
 
+-- 
+<br>
+{{ nome }}
+<br>
+<a href="mailto:{{email}}">{{ email }}</a>
+<br>
+Como nos conheceu: </b>{{ conhecer }}
 {% endblock %}

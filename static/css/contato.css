@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 #contato form{
@@ -16,7 +17,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
+  margin-top: 1.4rem;
 }
 #contato *:focus{
  outline: none;
@@ -42,7 +44,15 @@
   height: 20rem;
 }
 #contato .botao{
+  margin: 1rem 0;
+  border-color: var(--cor-secundaria);
+  color: var(--cor-secundaria);
   width: 100%;
+}
+
+#contato .botao:hover{
+  color: white;
+  background: var(--cor-secundaria);
 }
 
 select{

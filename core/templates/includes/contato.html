@@ -6,33 +6,36 @@
 
   <form method="post" action="/send_email/">
     {% csrf_token %}
-    <input placeholder="Nome" type="text" name="name">
-    <input placeholder="E-mail" type="email" name="email">
-    <input placeholder="telefone" type="text" name="telefone">
-    
-    <select name="servico">
-      <option value="" disabled selected> Selecione um serviço </option> 
-      {% for servico in servicos %}
-      <option value="{{servico.nome}}">{{servico.nome}}</option>
-      {% empty %}
-      <option value="Nenhum serviço cadastrado">Nenhum serviço cadastrado</option>
-      {% endfor %}  
+    <div class="col">
+      <input placeholder="Nome" type="text" name="name">
+      <input placeholder="E-mail" type="email" name="email">
+      <input placeholder="telefone" type="text" name="telefone">
+      <select name="servico">
+        <option value="" disabled selected> Selecione um serviço </option> 
+        {% for servico in servicos %}
+        <option value="{{servico.nome}}">{{servico.nome}}</option>
+        {% empty %}
+        <option value="Nenhum serviço cadastrado">Nenhum serviço cadastrado</option>
+        {% endfor %}  
 
-    </select>
-    
-    <textarea 
-      placeholder="Mensagem" 
-      name="message"></textarea>
-    
-    <select name='forma-contato'>
-      <option value="" disabled selected>Como nos conheceu? </option>
-      <option value="Facebook">Facebook</option>
-      <option value="Instagram">Instagram</option>
-      <option value="Indicações">Indicações</option>
-      <option value="E-mail">E-mail</option>
-    </select>
+      </select>
+    </div>
 
-    <button class="botao" type="submit">Enviar</button>
+    <div class="col">
+      <textarea 
+         placeholder="Mensagem" 
+         name="message"></textarea>
 
+      <select name='forma-contato'>
+        <option value="" disabled selected>Como nos conheceu? </option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Indicações">Indicações</option>
+        <option value="E-mail">E-mail</option>
+      </select>
+
+      <button class="botao" type="submit">Enviar</button>
+
+    </div>
   </form>
 </section>

@@ -7,39 +7,13 @@
   --cor-clara: #D7D7D7;
 }
 
-#servicos {
+#servicos{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.servico-titulo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
   width: 100%;
 }
-
-.servico-descricao {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-content: flex-end;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.servico-foto {
-  max-height: 27rem;
-  width: 100%;
-}
-
 .wrapper {
   display: flex;
   width: 100%;
@@ -56,18 +30,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: space-between; 
   margin: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 1.2rem;
-
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+#slick-servicos .card .imagem{
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+  background-repeat:  no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 #slick-servicos .card h1 {
-  /*border-radius: 1.2rem 1.2rem 0 0;*/
   text-align: center;
   font-size: 2rem;
   font-weight: normal;
@@ -75,19 +55,12 @@
   color: var(--cor-secundaria);
 }
 
-#slick-servicos .card img {
-  position: relative;
-  width: 100%;
-  /* scale: initial; */
-}
-
 #slick-servicos .card p {
-  /*z-index: 1;*/
+  display:block;
+  min-height: 10rem;
   background: white;
   font-size: 1.6rem;
-  padding: 20px;
-  /*width: 85%;*/
-
+  padding: 2rem;
 }
 
 #slick-servicos .card button {
@@ -95,12 +68,6 @@
   height: 4.2rem;
 }
 
-.vp {
-  display: block;
-  position: relative;
-  height: 20%;
-  overflow: hidden;
-}}
 .slick-slide:focus {
   outline: none;
 }

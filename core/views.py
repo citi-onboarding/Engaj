@@ -39,7 +39,7 @@ def send_email(request):
                 'email':email,
                 'servico':servico,
                 'mensagem':message,
-                'forma-contato':forma_contato,
+                'forma_contato':forma_contato,
                 'telefone': telefone
             }
         )

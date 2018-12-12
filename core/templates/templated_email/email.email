@@ -12,5 +12,5 @@
 <br>
 {{ telefone }}
 <br>
-Como nos conheceu: </b>{{ forma-contato }}
+Como nos conheceu: </b>{{ forma_contato }}
 {% endblock %}

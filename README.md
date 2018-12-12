@@ -6,7 +6,7 @@
   <img src=https://img.shields.io/badge/PSC-2018.2-green.svg?style=for-the-badge&colorB=8cbc4e>
 </p>
 
-A ENGAJ é a empresa Júnior do curso de Engenharia Ambiental da USP São Carlos. Essa one-page foi costruída durante o PSC 2018.2. Preview: http://engaj-staging.herokuapp.com/
+A ENGAJ é a empresa Júnior do curso de Engenharia Ambiental da USP São Carlos. Essa one-page foi construída durante o PSC 2018.2. Preview: http://engaj-staging.herokuapp.com/
 
 ## Primeiros passos
 Siga estes passos, caso queira ter uma cópia do projeto configurada e executando no seu host local, para propósitos de desenvolvimento e testes. Veja a seção [`Realizando Deploy`](#realizando-deploy) para entender como fazer a instalação em um ambiente de produção.

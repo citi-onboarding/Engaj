@@ -7,5 +7,4 @@ $( ".bg-data" ).each(function() {
   if (typeof attr !== typeof undefined && attr !== false) {
     $(this).css('background-image', 'url('+attr+')');
   }
-
 });

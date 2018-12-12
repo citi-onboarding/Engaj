@@ -12,27 +12,24 @@
         <div id="slick-servicos">
             {% for servico in servicos %}
             <div class="card">
-                <!--Figura que contem o servico e o nome-->
-                <div class = "servico-titulo">
+                <!--Título-->
+                <div>
                     <h1> {{servico.nome}} </h1>
                 </div>
 
-                <!--Corta o tamanho da imagem-->
-                <div class="vp">
-                    <img src="{{ servico.imagem.url }}" alt="{{servico.alt}}">
+                <!-- Imagem do card -->
+                <div class="imagem"
+                  data-img-src={{ servico.imagem.url }}>
                 </div>
 
-                <!--Descrição e CTA-->
-                <div class = "servico-descricao">
-                    <!--Descrição do serviço-->
-                    <div>
-                        <p>{{servico.descricao}}</p>
-                    </div>
-
-                    <!--Call to Action-->
-                    <div>
-                        <button class="botao" href="#"> <span> Contrate Já!</span></button>
-                    </div>
+                <!--Descrição do serviço-->
+                <div class="titulo-servicos">
+                  <p>{{servico.descricao}}</p>
+                </div>
+                
+                <!--Call to Action-->
+                <div class="call-to-action">
+                  <button class="botao" href="#"> <span> Contrate Já!</span></button>
                 </div>
 
             </div>

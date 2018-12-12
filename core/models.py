@@ -39,7 +39,6 @@ class Valor(models.Model):
         return self.descricao
 
 class Contato(models.Model):
-<<<<<<< HEAD
     facebook = models.TextField('Pergil no Facebook', default="http://fb.me/MinhaPagina")
     instagram = models.TextField('Instagram', dafault="instagram.com/MinhaPagina")
     email = models.EmailField('Email', default="meuemail@minhaempresa.com")
@@ -53,20 +52,3 @@ class Contato(models.Model):
 
     def __str__(self):
         return "contato"
-=======
-    facebook = models.TextField('Facebook')
-    instagram = models.TextField('Instagram')
-    email = models.EmailField('Email')
-    telefone = models.CharField(max_length=20, default="(00) 0.0000-0000")
-    local = models.TextField('Localização', default="Meu local no mundo")
-    gmaps = models.TextField('Link do Google Maps', default="#")
-
-    class Meta:
-        verbose_name='Informações de Contato'
-        verbose_name_plural='Informações de Contato'
-
-    def __str__(self):
-        return "Contato"
->>>>>>> 1ebed1723186e469010c47126e6b912cd2ea28cc
-
-

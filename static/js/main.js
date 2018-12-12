@@ -1,4 +1,4 @@
-$( ".card .imagem" ).each(function() {
+$( ".bg-data" ).each(function() {
   var attr = $(this).attr('data-img-src');
   var aux = '../..';
   

@@ -40,7 +40,7 @@ class Valor(models.Model):
 
 class Contato(models.Model):
     facebook = models.TextField('Pergil no Facebook', default="http://fb.me/MinhaPagina")
-    instagram = models.TextField('Instagram', dafault="instagram.com/MinhaPagina")
+    instagram = models.TextField('Instagram', default="instagram.com/MinhaPagina")
     email = models.EmailField('Email', default="meuemail@minhaempresa.com")
     telefone = models.CharField(max_length=20, default="(00) 0.0000-0000")
     local = models.TextField('Localização', default="Meu local no mundo")

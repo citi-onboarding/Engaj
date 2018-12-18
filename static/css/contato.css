@@ -1,0 +1,109 @@
+:root{
+    --cor-primaria: #17A85F;
+    --cor-secundaria: #0B8A63;
+    --cor-clara: #D7D7D7;
+}
+
+#contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#contato form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 1.4rem;
+}
+#contato *:focus{
+ outline: none;
+}
+#contato form input,
+#contato form option,
+#contato form select,
+#contato form textarea{
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 2px solid var(--cor-secundaria);
+  font-family: "Neo Sans", sans-serif;
+  background-color: white;
+
+}
+
+#contato form textarea{
+  height: 20rem;
+}
+#contato .botao{
+  margin: 1rem 0;
+  border-color: var(--cor-secundaria);
+  color: var(--cor-secundaria);
+  width: 100%;
+}
+
+#contato .botao:hover{
+  color: white;
+  background: var(--cor-secundaria);
+}
+
+select{
+  transition: background 100ms linear;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  
+  margin: 30px 0;
+  padding: 10px 30px 10px 20px;
+
+  border-radius: 30px;
+  box-sizing: box-border;
+  border: 2px solid #28744E;
+  background: url(../img/select-arrow-up-down.svg) no-repeat;
+  background-position: right center; 
+  background-size: 2em;
+  width: 100%; 
+  font-size: 0.9rem;
+}
+
+select:focus{
+  transition: background 100ms linear;
+  outline: none;
+}
+
+select:hover{
+  cursor: pointer;
+}
+
+.col{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:900px) {
+  .col{
+    width: 50%;
+    padding: 1rem;
+    height: 33rem;
+    
+    justify-content: space-between;
+  }
+  #contato form{
+    display:flex;
+    flex-direction: row;
+  }
+  .col *{
+  width: 100%;
+  }
+}

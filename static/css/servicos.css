@@ -6,6 +6,7 @@
   --cor-secundaria: #0B8A63;
   --cor-clara: #D7D7D7;
 }
+
 #servicos{
   display: flex;
   flex-direction: column;
@@ -66,6 +67,7 @@
   width: 20rem;
   height: 4.2rem;
 }
+
 .slick-slide:focus {
   outline: none;
 }

@@ -29,7 +29,7 @@
                 
                 <!--Call to Action-->
                 <div class="call-to-action">
-                  <a class="botao" href="#contato"> <span> Contrate Já!</span></a>
+                  <button class="botao" href="#contato"> <span> Contrate Já!</span></button>
                 </div>
 
             </div>

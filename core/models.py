@@ -5,6 +5,7 @@ from django import forms
 
 class Banner(models.Model):
     frase = models.CharField('Frase para o banner inicial', max_length=40)
+    imagem = models.ImageField(upload_to = 'banner/', default = 'banner/default.jpg')
 
     def __str__(self):
         return self.frase

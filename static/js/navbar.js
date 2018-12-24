@@ -24,12 +24,12 @@ var c = 0;
 $('.icon-menu').on("click", function() {
     if(c===0){
         c=1;
-        $('.navbarmenusanduiche').animate({top:0, height:'toggle'},900);
+        $('.navbarmenusanduiche').animate({top:0, height:'toggle'},300);
         corverde();
     }else{
         c=0;
-        $('.navbarmenusanduiche').animate({height:'toggle'},250);
-        if($(window).scrollTop() > ($(window).height()*0.2)){
+        $('.navbarmenusanduiche').animate({height:'toggle'},300);
+        if($(window).scrollTop() > ($(window).height() * 0.2)){
             corverde();
         }else cortransparente();
     }

@@ -11,6 +11,7 @@ class Banner(models.Model):
         return self.frase
 
 class Servico(models.Model):
+    id = models.AutoField(primary_key=True)
     nome = models.CharField('Nome do serviço', max_length=100)
     descricao = models.TextField('Descrição do Serviço')
     imagem = models.ImageField(upload_to = 'servicos/', default = 'servicos/default.png')

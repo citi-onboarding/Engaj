@@ -5,4 +5,5 @@ from core.models import *
 admin.site.register(Servico)
 admin.site.register(Sobre)
 admin.site.register(Valor)
+admin.site.register(Banner)
 admin.site.register(Contato)

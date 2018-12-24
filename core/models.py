@@ -2,10 +2,19 @@ from django.db import models
 from django import forms
 
 # Create your models here.
+
+class Banner(models.Model):
+    frase = models.CharField('Frase para o banner inicial', max_length=40)
+    imagem = models.ImageField(upload_to = 'banner/', default = 'banner/default.jpg')
+
+    def __str__(self):
+        return self.frase
+
 class Servico(models.Model):
+    id = models.AutoField(primary_key=True)
     nome = models.CharField('Nome do serviço', max_length=100)
     descricao = models.TextField('Descrição do Serviço')
-    imagem = models.ImageField(upload_to = 'servicos/', default = 'servicos/default.jpg')
+    imagem = models.ImageField(upload_to = 'servicos/', default = 'servicos/default.png')
     
     class Meta:
         verbose_name = 'Serviço'

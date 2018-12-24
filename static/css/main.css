@@ -90,6 +90,22 @@ body{
     width: 100%;
 }
 
+.col{
+  width: 90%;
+}
+
+@media screen and (min-width:900px) {
+  .col{
+    width: 40%
+  }
+  form{
+    display: flex;
+    flex-direction: row;
+  }
+  .col *{
+  width: 100%;
+  }
+}
 
 /* Estilos de cada componente (incluidos antes da produção)*/
 

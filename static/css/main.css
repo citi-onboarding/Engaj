@@ -10,13 +10,6 @@
 
 @font-face {
   font-family: "Neo Sans";
-  src:url("../font/neo-sans-pro-medium.ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Neo Sans";
   src:url("../font/neo-sans-pro.ttf");
   font-weight: normal;
   font-style: normal;

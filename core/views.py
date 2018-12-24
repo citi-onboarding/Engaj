@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, resolve
 
 from core.models import *
+import os
 
 # Create your views here.
 
@@ -35,7 +36,7 @@ def send_email(request):
         send_templated_mail(
             template_name='email',
             from_email='email',
-            recipient_list=['jrmmendesg@gmail.com'],
+            recipient_list=['engaj.site@gmail.com',os.environ['EMAIL_RECIPIENT_ACCOUNT']],
             context={
                 'nome':name,
                 'email':email,

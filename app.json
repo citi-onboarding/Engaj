@@ -1,0 +1,39 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "DISABLE_COLLECTSTATIC": {
+      "required": true
+    },
+    "DROPBOX_ACCESS_TOKEN": {
+      "required": true
+    },
+    "DROPBOX_HOST_PASSWORD": {
+      "required": true
+    },
+    "EMAIL_HOST_ACCOUNT": {
+      "required": true
+    },
+    "EMAIL_HOST_PASSWORD": {
+      "required": true
+    },
+    "EMAIL_RECIPIENT_ACCOUNT": {
+      "required": true
+    },
+    "HEROKU_POSTGRESQL_BROWN_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "name": "Engaj",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}

@@ -25,7 +25,9 @@
   --cor-secundaria: #0B8A63;
   --cor-clara: #D7D7D7;
 }
-
+html{
+  scroll-behavior: smooth;  
+}
 button:focus{
   outline: none;
 }
@@ -56,7 +58,7 @@ body{
   width: 90%;
 
   display: flex;
-  align-items: center;
+  align-items: centethr;
   justify-content: center;
 }
 

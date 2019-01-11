@@ -26,7 +26,7 @@
   --cor-clara: #D7D7D7;
 }
 html{
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
 }
 button:focus{
   outline: none;
@@ -109,7 +109,7 @@ body{
 #navbar{
   width:100%;
   height:50vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   margin-top:0;
   z-index: 10;
@@ -276,7 +276,7 @@ body{
 #banner{
   --engajtom1: #17A85F;
   --engajtom2: #0B8A63;
-  --engajtom3: #0D6A64; 
+  --engajtom3: #0D6A64;
   --banner-engajtom1: #17A85F00;
   --banner-engajtom2: #0B8A6399;
 
@@ -289,7 +289,7 @@ body{
   background-position: center;
   width: 100%;
   height: 100vh;
-  text-align: center;   
+  text-align: center;
 }
 
 #banner h1{
@@ -338,7 +338,7 @@ strong{
 @media screen and (max-width: 900px){
 
   #banner a{
-    width: 65%;        
+    width: 65%;
   }
 
   #banner h1{
@@ -376,7 +376,7 @@ strong{
   position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -567,9 +567,9 @@ select{
   box-sizing: box-border;
   border: 2px solid #28744E;
   background: url(../img/select-arrow-up-down.svg) no-repeat;
-  background-position: right center; 
+  background-position: right center;
   background-size: 2em;
-  width: 100%; 
+  width: 100%;
   font-size: 0.9rem;
 }
 
@@ -611,7 +611,7 @@ select:hover{
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 1rem; 
+  padding-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -867,7 +867,7 @@ select:hover{
 
 @media screen and (min-width:800px){
   .footer1{
-    flex-direction:row; 
+    flex-direction:row;
     justify-content: center;
     align-items: center;
     height: 25rem;

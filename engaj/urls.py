@@ -20,6 +20,8 @@ from django.conf.urls.static import static
 
 from core.views import *
 
+admin.site.site_header = 'ENGAJ - Admin'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexView.as_view()),

@@ -26,10 +26,10 @@ class Servico(models.Model):
 # Ver como tornar único  
 class Sobre(models.Model):
     descricao = models.TextField('Descrição da Engaj')
-    imagem = models.ImageField(upload_to = 'sobre/', default = 'sobre/default.jpg')
-    visao = models.TextField('Visão da Engaj')
+    imagem = models.ImageField('Imagem Institucional', upload_to = 'sobre/', default = 'sobre/default.jpg')
     missao = models.TextField('Missao da Engaj')
-
+    visao = models.TextField('Visão da Engaj')
+    
     class Meta:
         verbose_name = 'Sobre'   
         verbose_name_plural = 'Sobre'   
@@ -48,7 +48,7 @@ class Valor(models.Model):
         return self.descricao
 
 class Contato(models.Model):
-    facebook = models.TextField('Pergil no Facebook', default="http://fb.me/MinhaPagina")
+    facebook = models.TextField('Perfil no Facebook', default="http://fb.me/MinhaPagina")
     instagram = models.TextField('Instagram', default="instagram.com/MinhaPagina")
     email = models.EmailField('Email', default="meuemail@minhaempresa.com")
     telefone = models.CharField(max_length=20, default="(00) 0.0000-0000")
